@@ -1,0 +1,172 @@
+{
+  "app": {
+    "bundleName": "com.example.lotday2",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+    "default": {
+      "network": {
+        "cleartextTraffic": true
+      }
+    }
+  },
+  "module": {
+    "package": "com.example.lotday2",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.lotday2.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      }
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "MoodAdd",
+              "MoodUpdata"
+            ]
+          }
+        ],
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "hwc-theme",
+              "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+            }
+          ]
+        },
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.example.lotday2.MainAbility",
+        "icon": "$media:FANSI",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "skills": [
+          {
+            "actions": [
+              "action.system.home",
+              "Login",
+              "Register",
+              "About",
+              "Help",
+              "Message"
+            ]
+          }
+        ],
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "hwc-theme",
+              "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+            }
+          ]
+        },
+        "orientation": "unspecified",
+        "name": "com.example.lotday2.MineAbility",
+        "icon": "$media:icon",
+        "description": "$string:mineability_description",
+        "label": "$string:entry_MineAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "hwc-theme",
+              "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+            }
+          ]
+        },
+        "skills": [
+          {
+            "actions": [
+              "DiaryBook",
+              "DiaryBookAdd",
+              "DiaryAdd",
+              "Preview",
+              "DiaryUpdata"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.lotday2.DiaryAbility",
+        "icon": "$media:icon",
+        "description": "$string:diaryability_description",
+        "label": "$string:entry_DiaryAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "hwc-theme",
+              "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+            }
+          ]
+        },
+        "skills": [
+          {
+            "actions": [
+              "TimeAdd"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.lotday2.TimeAbility",
+        "icon": "$media:icon",
+        "description": "$string:timeability_description",
+        "label": "$string:entry_TimeAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "hwc-theme",
+              "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+            }
+          ]
+        },
+        "orientation": "unspecified",
+        "name": "com.example.lotday2.LoginAbility",
+        "icon": "$media:icon",
+        "description": "$string:loginability_description",
+        "label": "$string:entry_LoginAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

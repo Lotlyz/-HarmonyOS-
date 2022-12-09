@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    ohos:id="$+id:itemdiarybookdir"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:top_margin="10vp"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_diary_card"
+    >
+    <Component
+        ohos:height="1vp"
+        ohos:width="366vp"
+        ohos:layout_alignment="center"
+        ohos:background_element="#FF949494"
+        />
+    <DependentLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:padding="10vp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:background_element="#00898887"
+        >
+        <Image
+            ohos:id="$+id:diarybookimage"
+            ohos:height="88vp"
+            ohos:width="88vp"
+            ohos:image_src="$media:diaryitemimage1"
+            ohos:scale_mode="stretch"
+            ohos:left_margin="30vp"
+            ohos:layout_alignment="center"
+            />
+        <Text
+            ohos:id="$+id:diarybookname"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:left_margin="10vp"
+            ohos:right_of="$+id:diarybookimage"
+            ohos:text="dgj"
+            ohos:text_color="#FF000000"
+            ohos:center_in_parent="true"
+            ohos:multiple_lines="true"
+            ohos:text_size="30fp"
+            />
+    </DependentLayout>
+
+</DirectionalLayout>

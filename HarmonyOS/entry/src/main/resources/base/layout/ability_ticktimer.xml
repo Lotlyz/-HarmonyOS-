@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <TickTimer
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="30fp"
+        ohos:text_color="#888888"
+        ohos:background_element="#FF7ED7F6"
+        ohos:text_alignment="center"
+        ohos:layout_alignment="center"
+        ohos:top_margin="300vp"/>
+
+    <Button
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="开始"
+        ohos:text_size="30fp"
+        ohos:text_color="#FFFF8C07"
+        ohos:text_alignment="center"
+        ohos:layout_alignment="center"
+        />
+    <Button
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="结束"
+        ohos:text_size="30fp"
+        ohos:text_color="#FFFF8C07"
+        ohos:text_alignment="center"
+        ohos:layout_alignment="center"
+        />
+
+</DirectionalLayout>

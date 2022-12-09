@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DirectionalLayout
+    ohos:id="$+id:itemmoodpreviewcard"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="710vp"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:alignment="center"
+    ohos:left_padding="20vp"
+    ohos:right_padding="20vp"
+    ohos:background_element="$media:diarybeijing"
+    >
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="660vp"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:top_margin="10vp"
+    ohos:background_element="$graphic:background_mood_card"
+    >
+
+    <Image
+        ohos:id="$+id:moodpreview_image"
+        ohos:height="960px"
+        ohos:width="match_parent"
+        ohos:image_src="$media:tx"
+        ohos:scale_mode="stretch"
+        ohos:layout_alignment="center"
+        />
+
+    <Text
+        ohos:id="$+id:moodpreview_sheying"
+        ohos:below="$id:moodpreview_image"
+        ohos:height="20vp"
+        ohos:width="match_content"
+        ohos:text_size="13fp"
+        ohos:margin="5vp"
+        ohos:text="摄影 | "
+        />
+    <Text
+        ohos:id="$+id:moodpreview_sheyingshi"
+        ohos:below="$id:moodpreview_image"
+        ohos:right_of="$id:moodpreview_sheying"
+        ohos:height="20vp"
+        ohos:width="match_content"
+        ohos:text_size="13fp"
+        ohos:margin="5vp"
+        ohos:text="Lotlyz"
+        />
+    <Text
+        ohos:id="$+id:moodpreview_mood"
+        ohos:below="$id:moodpreview_sheying"
+        ohos:height="500px"
+        ohos:width="match_parent"
+        ohos:padding="30vp"
+        ohos:text_size="16fp"
+        ohos:multiple_lines="true"
+        ohos:text="lim我=你↔♥即使给我整个世界，我也只在你的身边♥"
+        />
+    <Text
+        ohos:id="$+id:moodpreview_date"
+        ohos:below="$id:moodpreview_mood"
+        ohos:align_parent_left="true"
+        ohos:height="20vp"
+        ohos:width="match_content"
+        ohos:text_alignment="center"
+        ohos:text_size="13fp"
+        ohos:left_margin="8vp"
+        ohos:right_margin="8vp"
+        ohos:text="2021-12-8"
+        />
+    <Text
+        ohos:id="$+id:moodpreview_address"
+        ohos:below="$id:moodpreview_mood"
+        ohos:right_of="$+id:moodpreview_date"
+        ohos:height="20vp"
+        ohos:width="match_content"
+        ohos:text_alignment="center"
+        ohos:text_size="13fp"
+        ohos:text="南宁"
+        />
+    <Text
+        ohos:id="$+id:moodpreview_author"
+        ohos:below="$id:moodpreview_mood"
+        ohos:align_parent_right="true"
+        ohos:height="25vp"
+        ohos:width="match_content"
+        ohos:text_alignment="center"
+        ohos:text_size="20fp"
+        ohos:left_margin="3vp"
+        ohos:right_margin="8vp"
+        ohos:text="Lotlyz"
+        />
+
+</DependentLayout>
+
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="30vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:top_margin="10vp"
+        ohos:background_element="#00FFFFFF"
+        >
+        <Image
+            ohos:id="$+id:preview_moodshoucang"
+            ohos:height="64px"
+            ohos:width="64px"
+            ohos:image_src="$media:moodcang"
+            ohos:weight="1"
+            ohos:layout_alignment="center"
+            />
+        <Image
+            ohos:id="$+id:preview_mooddianzan"
+            ohos:height="64px"
+            ohos:width="64px"
+            ohos:image_src="$media:moodzan"
+            ohos:weight="1"
+            ohos:layout_alignment="center"
+            />
+        <Image
+            ohos:id="$+id:preview_moodfenxiang"
+            ohos:height="64px"
+            ohos:width="64px"
+            ohos:image_src="$media:moodfen"
+            ohos:weight="1"
+            ohos:layout_alignment="center"
+            />
+</DirectionalLayout>
+</DirectionalLayout>

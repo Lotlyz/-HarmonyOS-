@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    ohos:id="$+id:bookitemdir"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="1080px"
+    ohos:width="1080px"
+    ohos:orientation="vertical"
+    ohos:background_element="$media:diaryitemimg">
+        <StackLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:background_element="#00FFFFFF"
+            ohos:orientation="vertical">
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="810vp"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:top_margin="20vp"
+        ohos:background_element="#00FFFFFF">
+    <ListContainer
+        ohos:id="$+id:diary_diarybook_listcontainer"
+        ohos:height="860px"
+        ohos:width="1080px"
+        ohos:background_element="#007E0B0B"/>
+    </DirectionalLayout>
+    </StackLayout>
+</DirectionalLayout>

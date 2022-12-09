@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    ohos:id="$+id:time_stackLayout"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+    <PageSlider
+        ohos:id="$+id:Time_page_slider"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:background_element="#FFFFFFFF"
+        ohos:layout_alignment="top"
+        />
+    <DependentLayout
+        ohos:id="$+id:toptimede"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="#F0F0F0"
+        ohos:orientation="vertical">
+    <TabList
+        ohos:id="$+id:Time_tab_list"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:background_element="#36F1F1F1"
+        ohos:layout_alignment="horizontal_center"
+        ohos:normal_text_color="#FF261F1F"
+        ohos:selected_text_color="#FF003DFF"
+        ohos:text_size="23vp"
+        ohos:text_alignment="center"
+        ohos:fixed_mode="true"
+        />
+
+    <Image
+        ohos:id="$+id:timeG_add"
+        ohos:left_of="$id:Time_tab_list"
+        ohos:center_in_parent="true"
+        ohos:align_parent_right="true"
+        ohos:height="32vp"
+        ohos:width="32vp"
+        ohos:right_margin="15vp"
+        ohos:image_src="$media:addjiahao"
+        ohos:scale_mode="stretch"
+        ohos:weight="1"
+        ohos:layout_alignment="center"
+        />
+</DependentLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:ability_bottom_dir_t"
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:layout_alignment="bottom"
+        ohos:orientation="horizontal"
+        ohos:background_element="#F0F0F0">
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:weight="1"
+            ohos:orientation="vertical">
+
+            <Button
+                ohos:id="$+id:time_home"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:layout_alignment="center"
+                ohos:background_element="$media:bottom1"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:weight="1"
+            ohos:orientation="vertical">
+
+            <Button
+                ohos:id="$+id:time_diary"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:layout_alignment="center"
+                ohos:background_element="$media:bottom2"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:weight="1"
+            ohos:orientation="vertical">
+
+            <Button
+                ohos:id="$+id:time_time"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:layout_alignment="center"
+                ohos:background_element="$media:bottom7"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:weight="1"
+            ohos:orientation="vertical">
+
+            <Button
+                ohos:id="$+id:time_mine"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:layout_alignment="center"
+                ohos:background_element="$media:bottom4"
+                />
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+</StackLayout>

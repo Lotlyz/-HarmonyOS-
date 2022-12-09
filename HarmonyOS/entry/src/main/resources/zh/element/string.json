@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "LotDay"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "entry_MineAbility",
+      "value": "entry_MineAbility"
+    },
+    {
+      "name": "mineability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "entry_DiaryAbility",
+      "value": "entry_DiaryAbility"
+    },
+    {
+      "name": "diaryability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "entry_TimeAbility",
+      "value": "entry_TimeAbility"
+    },
+    {
+      "name": "timeability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "entry_LoginAbility",
+      "value": "entry_LoginAbility"
+    },
+    {
+      "name": "loginability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "loginability_HelloWorld",
+      "value": "你好，世界"
+    }
+  ]
+}

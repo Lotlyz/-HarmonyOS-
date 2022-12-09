@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DependentLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:top_margin="60vp"
+        ohos:padding="15vp">
+
+        <Text
+            ohos:id="$+id:texttx"
+            ohos:height="250px"
+            ohos:width="250px"
+            ohos:text="头像"
+            ohos:text_size="17fp"
+            ohos:text_color="#000000"
+            ohos:text_alignment="center"
+            ohos:align_parent_top="true"
+            ohos:align_parent_left="true"
+            />
+
+        <Image
+            ohos:id="$+id:person_touxiang"
+            ohos:height="250px"
+            ohos:width="250px"
+            ohos:image_src="$media:tx"
+            ohos:scale_mode="stretch"
+            ohos:align_parent_right="true"
+            ohos:align_parent_top="true"
+            />
+
+        <Text
+            ohos:id="$+id:mingzitx"
+            ohos:height="250px"
+            ohos:width="250px"
+            ohos:text="名字"
+            ohos:text_size="17fp"
+            ohos:text_color="#000000"
+            ohos:text_alignment="center"
+            ohos:below="$id:texttx"
+            ohos:align_parent_left="true"
+            />
+
+        <TextField
+            ohos:id="$+id:person_name"
+            ohos:height="250px"
+            ohos:width="match_content"
+            ohos:hint="Lotlyz"
+            ohos:text_size="17fp"
+            ohos:hint_color="#999999"
+            ohos:text_alignment="center"
+            ohos:background_element="#FFFFFF"
+            ohos:element_cursor_bubble="$media:handxxx"
+            ohos:below="$id:person_touxiang"
+            ohos:align_parent_right="true"
+            />
+
+        <Text
+            ohos:id="$+id:phonetx"
+            ohos:height="250px"
+            ohos:width="250px"
+            ohos:text="手机号"
+            ohos:text_size="17fp"
+            ohos:text_color="#000000"
+            ohos:text_alignment="center"
+            ohos:below="$id:mingzitx"
+            ohos:align_parent_left="true"
+            />
+        <TextField
+            ohos:id="$+id:person_phone"
+            ohos:height="250px"
+            ohos:width="match_content"
+            ohos:hint="18377451477"
+            ohos:text_size="17fp"
+            ohos:hint_color="#999999"
+            ohos:text_alignment="center"
+            ohos:background_element="#FFFFFF"
+            ohos:element_cursor_bubble="$media:handxxx"
+            ohos:below="$id:person_name"
+            ohos:align_parent_right="true"
+            />
+
+        <Text
+
+            ohos:id="$+id:passwordtx"
+            ohos:height="250px"
+            ohos:width="250px"
+            ohos:text="密码"
+            ohos:text_size="17fp"
+            ohos:text_color="#000000"
+            ohos:text_alignment="center"
+            ohos:below="$id:phonetx"
+            ohos:align_parent_left="true"
+            />
+
+        <TextField
+            ohos:id="$+id:person_password"
+            ohos:height="250px"
+            ohos:width="match_content"
+            ohos:hint="123"
+            ohos:text_size="17fp"
+            ohos:hint_color="#999999"
+            ohos:text_alignment="center"
+            ohos:background_element="#FFFFFF"
+            ohos:element_cursor_bubble="$media:handxxx"
+            ohos:below="$id:person_phone"
+            ohos:align_parent_right="true"
+            />
+
+    </DependentLayout>
+    <Button
+        ohos:id="$+id:person_updata"
+        ohos:height="47vp"
+        ohos:width="70vp"
+        ohos:text="保存"
+        ohos:text_size="24fp"
+        ohos:text_color="#FEFEFE"
+        ohos:text_alignment="center"
+        ohos:background_element="$graphic:beautifulloginbutton"
+        ohos:top_margin="500vp"
+        ohos:left_margin="45vp"
+        ohos:below="$id:passwordtx"
+        ohos:align_parent_left="true"
+        />
+    <Button
+        ohos:id="$+id:person_detele"
+        ohos:height="47vp"
+        ohos:width="70vp"
+        ohos:text="注销"
+        ohos:text_size="24fp"
+        ohos:text_color="#FEFEFE"
+        ohos:text_alignment="center"
+        ohos:background_element="$graphic:beautifulloginbutton"
+        ohos:top_margin="500vp"
+        ohos:right_margin="10vp"
+        ohos:below="$id:person_password"
+        ohos:align_parent_right="true"
+        />
+
+</DependentLayout>

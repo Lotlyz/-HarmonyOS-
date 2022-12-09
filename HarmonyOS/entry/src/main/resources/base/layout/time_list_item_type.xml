@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="horizontal"
+    ohos:margin="2vp"
+    ohos:background_element="#FFFFFFFF"
+    >
+<DependentLayout
+    ohos:id="$+id:timetypecardde"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="60vp"
+    ohos:width="76vp"
+    ohos:orientation="horizontal"
+    ohos:padding="10vp"
+    ohos:margin="10vp"
+    ohos:background_element="$graphic:background_diary_card"
+    >
+    <Checkbox
+        ohos:id="$+id:time_type_name"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="15fp"
+        ohos:text_color_on="#00AAEE"
+        ohos:text_color_off="#000000"
+        ohos:center_in_parent="true"
+        />
+</DependentLayout>
+</DirectionalLayout>

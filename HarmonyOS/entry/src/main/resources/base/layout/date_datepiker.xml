@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="666px"
+    ohos:width="888px"
+    ohos:orientation="horizontal"
+    ohos:background_element="$media:datepiker"
+    >
+    <DependentLayout
+        ohos:id="$+id:diarytopde"
+        ohos:height="666px"
+        ohos:width="888px"
+        ohos:background_element="#00FFFFFF"
+        ohos:orientation="horizontal">
+    <TextField
+        ohos:id="$+id:date_pikermonth"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:hint="12"
+ohos:align_parent_left="true"
+        ohos:center_in_parent="true"
+        ohos:left_margin="55vp"
+        ohos:text_size="25fp"
+        ohos:hint_color="#999999"
+        ohos:text_alignment="center"
+        ohos:background_element="#00FF0000"
+        ohos:element_cursor_bubble="$media:handxxx"
+        />
+    <TextField
+        ohos:id="$+id:date_pikerday"
+        ohos:height="match_content"
+        ohos:width="match_content"
+
+        ohos:hint="22"
+        ohos:center_in_parent="true"
+        ohos:text_size="25fp"
+        ohos:hint_color="#999999"
+        ohos:text_alignment="center"
+        ohos:background_element="#00FFFFFF"
+        ohos:element_cursor_bubble="$media:handxxx"
+        />
+    <TextField
+        ohos:id="$+id:date_pikeryear"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:right_margin="45vp"
+        ohos:hint="2021"
+        ohos:center_in_parent="true"
+        ohos:align_parent_right="true"
+        ohos:text_size="25fp"
+        ohos:hint_color="#999999"
+        ohos:text_alignment="center"
+        ohos:background_element="#00FFFFFF"
+        ohos:element_cursor_bubble="$media:handxxx"
+        />
+        <Text
+            ohos:id="$+id:date_pikce_on"
+            ohos:height="140px"
+            ohos:width="360px"
+            ohos:align_parent_left="true"
+            ohos:align_parent_bottom="true"
+            ohos:left_margin="22vp"
+            ohos:text_color="#FF000000"
+            ohos:text_size="20vp"
+            ohos:text_alignment="center"
+            ohos:background_element="#00A51E1E"
+            />
+        <Text
+            ohos:id="$+id:date_pikce_off"
+            ohos:height="140px"
+            ohos:width="360px"
+            ohos:align_parent_right="true"
+            ohos:align_parent_bottom="true"
+            ohos:right_margin="20vp"
+            ohos:text_color="#FF000000"
+            ohos:text_size="17vp"
+            ohos:text_alignment="center"
+            ohos:background_element="#00A51E1E"
+            />
+</DependentLayout>
+</DirectionalLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    ohos:id="$+id:settingDepend"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal">
+    <DependentLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:padding="10vp"
+        ohos:orientation="horizontal">
+        <Button
+            ohos:id="$+id:setting_back"
+            ohos:align_parent_top="true"
+            ohos:align_parent_left="true"
+            ohos:height="64px"
+            ohos:width="64px"
+            ohos:background_element="$media:pageback"
+
+            />
+
+        <Button
+            ohos:id="$+id:setting_change"
+            ohos:center_in_parent="true"
+            ohos:above="$id:setting_esc"
+            ohos:height="30vp"
+            ohos:width="match_parent"
+            ohos:bottom_margin="20vp"
+            ohos:text="切换账号"
+            ohos:background_element="$graphic:background_mood_card"
+            />
+        <Button
+            ohos:id="$+id:setting_esc"
+            ohos:align_parent_bottom="true"
+            ohos:center_in_parent="true"
+            ohos:height="30vp"
+            ohos:width="match_parent"
+            ohos:text="退出登录"
+            ohos:background_element="$graphic:background_mood_card"
+            />
+    </DependentLayout>
+
+</DirectionalLayout>

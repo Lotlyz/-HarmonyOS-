@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DependentLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#00F0F0F0">
+    <Button
+        ohos:id="$+id:diarybookadd_save"
+        ohos:height="64px"
+        ohos:width="64px"
+        ohos:background_element="$media:save"
+        ohos:margin="10vp"
+        ohos:align_parent_left="true"
+        />
+    <Button
+        ohos:id="$+id:diarybookadd_image"
+        ohos:height="64px"
+        ohos:width="200px"
+        ohos:background_element="$graphic:background_diary_card"
+        ohos:text="图片"
+        ohos:margin="10vp"
+        ohos:align_parent_right="true"
+        />
+    </DependentLayout>
+    <TextField
+        ohos:id="$+id:bookadd_name"
+        ohos:height="50vp"
+        ohos:width="350vp"
+        ohos:hint="请输入日记本的名字"
+        ohos:text_size="17fp"
+        ohos:hint_color="#999999"
+        ohos:text_alignment="center"
+        ohos:top_margin="50vp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:background_element="#FFFFFFFF"
+        ohos:element_cursor_bubble="$media:handxxx"
+        />
+
+    <Component
+        ohos:height="1vp"
+        ohos:width="match_parent"
+        ohos:background_element="#696969"
+        ohos:start_margin="24vp"
+        ohos:end_margin="24vp"
+        ohos:top_margin="10vp"/>
+
+</DirectionalLayout>

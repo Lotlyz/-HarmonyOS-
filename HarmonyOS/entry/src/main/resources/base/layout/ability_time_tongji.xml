@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#FFFFFFFF">
+
+    <DependentLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:top_margin="80vp"
+        ohos:orientation="horizontal"
+        ohos:background_element="#FFFFFFFF">
+    <RoundProgressBar
+        ohos:id="$+id:round_progress_bar"
+        ohos:height="200vp"
+        ohos:width="200vp"
+        ohos:progress_width="40vp"
+        ohos:progress="30"
+        ohos:center_in_parent="true"
+        ohos:progress_hint_text="工作30%"
+        ohos:progress_hint_text_alignment="center"
+        ohos:progress_hint_text_color="#888989"
+        ohos:progress_hint_text_size="20fp"
+        ohos:progress_color="#FFFF8D2A"/>
+    </DependentLayout>
+
+    <ScrollView
+        ohos:id="$+id:timeTscrollview"
+        ohos:height="400vp"
+        ohos:width="match_parent"
+        ohos:top_margin="60vp"
+        ohos:background_element="#FFFFFFFF"
+        ohos:rebound_effect="true">
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:background_element="#FFFFFFFF">
+            <ListContainer
+                ohos:id="$+id:timeT_listcontainer"
+                ohos:height="680vp"
+                ohos:width="match_parent"
+                ohos:background_element="#FFB10B0B"/>
+        </DirectionalLayout>
+
+    </ScrollView>
+
+</DirectionalLayout>

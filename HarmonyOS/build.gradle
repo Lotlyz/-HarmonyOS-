@@ -1,0 +1,70 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.huawei.ohos.app'
+
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#section1112183053510
+ohos {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\Administrator\\.ohos\\config\\auto_debug_LotDay002_com.example.lotday2_420086000303243194.p12')
+            storePassword '0000001AAA0E33B6B21A0921EB3B96F3B68331754A9718C449E2FF19A2362CD1EAB1354CA84F05DE6931'
+            keyAlias = 'debugKey'
+            keyPassword '0000001A028C0F752B5DFC5B26D288F92614B240BF0A834A585782271F782521E3510CF867F7AEC928FF'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\Administrator\\.ohos\\config\\auto_debug_LotDay002_com.example.lotday2_420086000303243194.p7b')
+            certpath file('C:\\Users\\Administrator\\.ohos\\config\\auto_debug_LotDay002_com.example.lotday2_420086000303243194.cer')
+        }
+    }
+
+    //配置签名信息索引
+//    signingConfigs {
+//        debug {
+//            storeFile file(signingConfigProps['storeFile'])
+//            storePassword signingConfigProps['storePassword']
+//            keyAlias signingConfigProps['keyAlias']
+//            keyPassword signingConfigProps['keyPassword']
+//            signAlg = 'SHA256withECDSA'
+//            profile file(signingConfigProps['profile'])
+//            certpath file(signingConfigProps['certpath'])
+//        }
+//    }
+
+//    signingConfigs {
+//        debug {
+//            storeFile file('C:\\Users\\Administrator\\.ohos\\config\\auto_debug_lotday2_420086000303243194.p12')
+//            storePassword = '00000018C56E9A1D445EF8FD75026FBEA9D989B97CD8905A9B3496CD0DCB3A0A014C6111C1BD053B'
+//            keyAlias = 'debugKey'
+//            keyPassword = '00000018D438C4FACD15D859808B654748A0F026D9C8295E92B7B5BC7F0E1DB14F10CB9D640CB0E4'
+//            signAlg = 'SHA256withECDSA'
+//            profile file('C:\\Users\\Administrator\\.ohos\\config\\auto_debug_lotday2_420086000303243194.p7b')
+//            certpath file('C:\\Users\\Administrator\\.ohos\\config\\auto_debug_lotday2_420086000303243194.cer')
+//        }
+//    }
+    compileSdkVersion 7
+}
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    }
+    dependencies {
+        classpath 'com.huawei.ohos:hap:3.1.1.4'
+        classpath 'com.huawei.ohos:decctest:1.2.7.15'
+        classpath 'com.huawei.agconnect:agcp-harmony:1.0.0.300'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    }
+}

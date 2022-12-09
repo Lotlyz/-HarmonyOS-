@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#55F2F2F2">
+    <Button
+        ohos:id="$+id:about_back"
+        ohos:height="64px"
+        ohos:width="64px"
+        ohos:background_element="$media:pageback"
+        ohos:margin="10vp"
+        ohos:layout_alignment="left"
+        />
+
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="horizontal_center"
+        ohos:top_margin="250vp"
+        >
+
+        <Image
+            ohos:id="$+id:shouye01"
+            ohos:height="114px"
+            ohos:width="114px"
+            ohos:image_src="$media:FANSIlog"
+            ohos:layout_alignment="center"
+            ohos:top_margin="10vp"
+            />
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:alignment="vertical_center"
+        ohos:top_margin="10vp"
+
+        >
+
+        <Text
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="版本:3.0.2"
+            ohos:text_size="17fp"
+            ohos:text_alignment="center"
+            ohos:top_margin="10vp"
+            ohos:right_margin="3vp"
+            ohos:background_element="#55FFF2F2F2"
+            ohos:multiple_lines="true"
+            ohos:layout_alignment="center"
+            />
+        <Text
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="作者：侧耳倾听"
+            ohos:text_size="17fp"
+            ohos:text_alignment="center"
+            ohos:top_margin="10vp"
+            ohos:right_margin="3vp"
+            ohos:background_element="#55FFF2F2F2"
+            ohos:layout_alignment="center"
+            />
+
+        <Text
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="邮箱:lotlyz@qq.com"
+            ohos:text_size="17fp"
+            ohos:text_alignment="center"
+            ohos:top_margin="10vp"
+            ohos:right_margin="3vp"
+            ohos:background_element="#55FFF2F2F2"
+            ohos:multiple_lines="true"
+            ohos:layout_alignment="center"
+            />
+        <Text
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="微信：JustagainLotlyz"
+            ohos:text_size="17fp"
+            ohos:text_alignment="center"
+            ohos:top_margin="10vp"
+            ohos:right_margin="3vp"
+            ohos:background_element="#55FFF2F2F2"
+            ohos:layout_alignment="center"
+            />
+    </DirectionalLayout>
+
+</DirectionalLayout>

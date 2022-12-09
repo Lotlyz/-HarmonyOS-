@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:background_element="#00FAFAFA"
+        ohos:weight="1770">
+        <DependentLayout
+            ohos:id="$+id:moodtoptheme"
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="50vp"
+            ohos:width="match_parent"
+            ohos:layout_alignment="bottom"
+            ohos:orientation="horizontal"
+            ohos:background_element="#F0F0F0">
+
+            <Text
+                ohos:id="$+id:dongtaitext"
+                ohos:height="50vp"
+                ohos:width="match_parent"
+                ohos:text="动态"
+                ohos:text_color="#FF000000"
+                ohos:text_size="23vp"
+                ohos:text_alignment="center"
+                />
+
+            <Image
+                ohos:id="$+id:mood_moodstation"
+                ohos:left_of="$id:dongtaitext"
+                ohos:center_in_parent="true"
+                ohos:align_parent_right="true"
+                ohos:height="32vp"
+                ohos:width="32vp"
+                ohos:right_margin="15vp"
+                ohos:image_src="$media:FANSIlog"
+                ohos:scale_mode="stretch"
+                ohos:layout_alignment="center"
+                />
+
+        </DependentLayout>
+        <ListContainer
+            ohos:id="$+id:moodlistcontainer"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:top_margin="5vp"
+            ohos:background_element="#00FFFFFF"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:ability_bottom_dir_m"
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="150px"
+        ohos:width="match_parent"
+        ohos:background_element="#F0F0F0"
+        ohos:layout_alignment="bottom"
+        ohos:orientation="horizontal"
+        ohos:weight="150">
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="vertical"
+            ohos:weight="1">
+
+            <Button
+                ohos:id="$+id:main_home"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:background_element="$media:bottom5"
+                ohos:layout_alignment="center"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="vertical"
+            ohos:weight="1">
+
+            <Button
+                ohos:id="$+id:main_diary"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:background_element="$media:bottom2"
+                ohos:layout_alignment="center"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="vertical"
+            ohos:weight="1">
+
+            <Button
+                ohos:id="$+id:main_time"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:background_element="$media:bottom3"
+                ohos:layout_alignment="center"
+                />
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="vertical"
+            ohos:weight="1">
+
+            <Button
+                ohos:id="$+id:main_mine"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:background_element="$media:bottom4"
+                ohos:layout_alignment="center"
+                />
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+</StackLayout>

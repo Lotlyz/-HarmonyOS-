@@ -1,0 +1,47 @@
+apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.huawei.ohos.decctest'
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#section1112183053510
+
+//加载签名信息配置文件
+//def signingConfigPropsFile = rootProject.file("signing-config.properties")
+//def signingConfigProps = new Properties()
+//signingConfigProps.load((new FileInputStream(signingConfigPropsFile)))
+
+ohos {
+//    //配置签名信息索引
+//    signingConfigs {
+//        debug {
+//            storeFile file(signingConfigProps['storeFile'])
+//            storePassword signingConfigProps['storePassword']
+//            keyAlias signingConfigProps['keyAlias']
+//            keyPassword signingConfigProps['keyPassword']
+//            signAlg = 'SHA256withECDSA'
+//            profile file(signingConfigProps['profile'])
+//            certpath file(signingConfigProps['certpath'])
+//        }
+//    }
+    compileSdkVersion 7
+    defaultConfig {
+        compatibleSdkVersion 6
+    }
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    testImplementation 'junit:junit:4.13.1'
+    ohosTestImplementation 'com.huawei.ohos.testkit:runner:2.0.0.200'
+    implementation 'com.huawei.agconnect:agconnect-core-harmony:1.0.0.300'
+}
+decc {
+    supportType = ['html', 'xml']
+}
+// Add the information to the bottom of the file.
+apply plugin: 'com.huawei.agconnect'

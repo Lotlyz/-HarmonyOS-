@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:id="$+id:mine_dircontent"
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+        <DependentLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:background_element="#00FFFFFF"
+            ohos:orientation="horizontal"
+            ohos:top_margin="10vp">
+            <Button
+                ohos:id="$+id:mine_login"
+                ohos:align_parent_top="true"
+                ohos:align_parent_right="true"
+                ohos:height="128px"
+                ohos:width="128px"
+                ohos:margin="8vp"
+                ohos:background_element="$media:login"
+                />
+    </DependentLayout>
+        <DependentLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="250px"
+            ohos:width="match_parent"
+            ohos:background_element="#00FFFFFF"
+            ohos:orientation="horizontal"
+            ohos:top_margin="88vp">
+                <Image
+                    ohos:id="$+id:mine_touxiang"
+                    ohos:height="250px"
+                    ohos:width="250px"
+                    ohos:left_margin="10vp"
+                    ohos:image_src="$media:tx"
+                    ohos:scale_mode="stretch"
+                    ohos:background_element="#888888"/>
+                <Text
+                    ohos:id="$+id:mine_user_name"
+                    ohos:right_of="$id:mine_touxiang"
+                    ohos:align_parent_top="true"
+                    ohos:left_margin="15vp"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="       "
+                    ohos:text_color="#000000"
+                    ohos:text_alignment="left"
+                    ohos:text_size="20fp"
+                    />
+            <Button
+                ohos:id="$+id:mine_grade"
+                ohos:right_of="$id:mine_touxiang"
+                ohos:below="$+id:mine_user_name"
+                ohos:height="68px"
+                ohos:width="414px"
+                ohos:left_margin="15vp"
+                ohos:background_element="$media:grade"
+                />
+            <Text
+                ohos:id="$+id:mine_user_motto"
+                ohos:right_of="$id:mine_touxiang"
+                ohos:below="$+id:mine_grade"
+                ohos:align_parent_bottom="true"
+                ohos:left_margin="17vp"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="  "
+                ohos:text_color="#000000"
+                ohos:text_alignment="left"
+                ohos:text_size="12fp"
+                />
+            </DependentLayout>
+
+
+
+        <ScrollView
+            ohos:id="$+id:scrollview"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="#00FFFFFF"
+            ohos:rebound_effect="true"
+            ohos:top_margin="120vp"
+            ohos:layout_alignment="horizontal_center">
+        <DependentLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:background_element="#00FFFFFF"
+            ohos:orientation="vertical"
+            ohos:padding="36vp">
+                <Button
+                    ohos:id="$+id:mine_theme"
+                    ohos:below="$+id:mine_login"
+                    ohos:align_parent_left="true"
+                    ohos:height="150px"
+                    ohos:width="128px"
+                    ohos:background_element="$media:zhuti"
+                    ohos:layout_alignment="center"
+                    />
+                <Button
+                    ohos:id="$+id:mine_shujubeifen"
+                    ohos:right_of="$+id:mine_theme"
+                    ohos:left_margin="99vp"
+                    ohos:height="150px"
+                    ohos:width="128px"
+                    ohos:background_element="$media:timetype"
+                    ohos:layout_alignment="center"
+                    />
+                <Button
+                    ohos:id="$+id:mine_liuyanban"
+                    ohos:align_parent_right="true"
+                    ohos:height="150px"
+                    ohos:width="128px"
+                    ohos:background_element="$media:liuyanban"
+                    ohos:layout_alignment="center"
+                    />
+                <Button
+                    ohos:id="$+id:mine_setting"
+                    ohos:top_margin="60vp"
+                    ohos:below="$+id:mine_liuyanban"
+                    ohos:align_parent_left="true"
+                    ohos:height="150px"
+                    ohos:width="128px"
+                    ohos:background_element="$media:settng"
+                    ohos:layout_alignment="center"
+                    />
+                <Button
+                    ohos:id="$+id:mine_help"
+                    ohos:below="$+id:mine_shujubeifen"
+                    ohos:right_of="$+id:mine_setting"
+                    ohos:top_margin="60vp"
+                    ohos:left_margin="99vp"
+                    ohos:height="150px"
+                    ohos:width="128px"
+                    ohos:background_element="$media:help"
+                    ohos:layout_alignment="center"
+                    />
+                <Button
+                    ohos:id="$+id:mine_about"
+                    ohos:below="$+id:mine_liuyanban"
+                    ohos:align_parent_right="true"
+                    ohos:top_margin="60vp"
+                    ohos:height="150px"
+                    ohos:width="128px"
+                    ohos:background_element="$media:mine_about"
+                    ohos:layout_alignment="center"
+                    />
+
+        </DependentLayout>
+        </ScrollView>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="150px"
+        ohos:width="match_parent"
+        ohos:background_element="#00F0F0F0"
+        ohos:layout_alignment="bottom"
+        ohos:bottom_margin="8vp"
+        ohos:orientation="horizontal">
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="vertical"
+            ohos:weight="1">
+
+
+            <Button
+                ohos:id="$+id:mine_home"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:background_element="$media:bottom1"
+                ohos:layout_alignment="center"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="vertical"
+            ohos:weight="1">
+
+
+            <Button
+                ohos:id="$+id:mine_diary"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:background_element="$media:bottom2"
+                ohos:layout_alignment="center"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="vertical"
+            ohos:weight="1">
+
+
+            <Button
+                ohos:id="$+id:mine_time"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:background_element="$media:bottom3"
+                ohos:layout_alignment="center"
+                />
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="vertical"
+            ohos:weight="1">
+
+            <Button
+                ohos:id="$+id:mine_mine"
+                ohos:height="150px"
+                ohos:width="128px"
+                ohos:background_element="$media:bottom8"
+                ohos:layout_alignment="center"
+                />
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+</StackLayout>

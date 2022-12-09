@@ -1,0 +1,16 @@
+# 配置端口
+server:
+  port: 3099
+# 配置mysql数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.79.182.135:3306/lotday_lotlyz-cn?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: lotday_lotlyz-cn
+    password: y57cE7bWmHM2iTYW
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

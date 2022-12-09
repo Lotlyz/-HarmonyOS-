@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lotlyz.lotday.mapper.TimeTypeMapper">
+  <resultMap id="BaseResultMap" type="com.lotlyz.lotday.model.TimeType">
+    <id column="timetype_id" jdbcType="INTEGER" property="timetypeId" />
+    <result column="timetype_name" jdbcType="VARCHAR" property="timetypeName" />
+    <result column="timetype_user_id" jdbcType="INTEGER" property="timetypeUserId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    timetype_id, timetype_name, timetype_user_id
+  </sql>
+
+  <select id="selectAll"  resultMap="BaseResultMap">
+    select * from TimeType
+  </select>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from TimeType
+    where timetype_id = #{timetypeId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByTimeTypeName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select *
+    <include refid="Base_Column_List" />
+    from TimeType
+    where timetype_name = #{timetypeName,jdbcType=VARCHAR}
+  </select>
+
+  <insert id="insert" parameterType="com.lotlyz.lotday.model.TimeType">
+    insert into TimeType (timetype_id, timetype_name, timetype_user_id
+      )
+    values (#{timetypeId,jdbcType=INTEGER}, #{timetypeName,jdbcType=VARCHAR}, #{timetypeUserId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.lotlyz.lotday.model.TimeType">
+    insert into TimeType
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="timetypeId != null">
+        timetype_id,
+      </if>
+      <if test="timetypeName != null">
+        timetype_name,
+      </if>
+      <if test="timetypeUserId != null">
+        timetype_user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="timetypeId != null">
+        #{timetypeId,jdbcType=INTEGER},
+      </if>
+      <if test="timetypeName != null">
+        #{timetypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="timetypeUserId != null">
+        #{timetypeUserId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from TimeType
+    where timetype_id = #{timetypeId,jdbcType=INTEGER}
+  </delete>
+
+  <update id="updateByPrimaryKeySelective" parameterType="com.lotlyz.lotday.model.TimeType">
+    update TimeType
+    <set>
+      <if test="timetypeName != null">
+        timetype_name = #{timetypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="timetypeUserId != null">
+        timetype_user_id = #{timetypeUserId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where timetype_id = #{timetypeId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lotlyz.lotday.model.TimeType">
+    update TimeType
+    set timetype_name = #{timetypeName,jdbcType=VARCHAR},
+      timetype_user_id = #{timetypeUserId,jdbcType=INTEGER}
+    where timetype_id = #{timetypeId,jdbcType=INTEGER}
+  </update>
+</mapper>

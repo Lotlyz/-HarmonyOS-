@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lotlyz.lotday.mapper.DiarybookMapper">
+  <resultMap id="BaseResultMap" type="com.lotlyz.lotday.model.Diarybook">
+    <id column="diarybook_id" jdbcType="INTEGER" property="diarybookId" />
+    <result column="diarybook_name" jdbcType="VARCHAR" property="diarybookName" />
+    <result column="diarybook_image" jdbcType="VARCHAR" property="diarybookImage" />
+    <result column="diarybook_type" jdbcType="VARCHAR" property="diarybookType" />
+    <result column="diarybook_user_id" jdbcType="INTEGER" property="diarybookUserId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    diarybook_id, diarybook_name, diarybook_image, diarybook_type, diarybook_user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from Diarybook
+    where diarybook_id = #{diarybookId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByDiarybookUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from Diarybook
+    where diarybook_user_id = #{diarybookUserId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByDiarybookName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from Diarybook
+    where diarybook_name = #{diarybookName,jdbcType=VARCHAR}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from Diarybook
+    where diarybook_id = #{diarybookId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.lotlyz.lotday.model.Diarybook">
+    insert into Diarybook (diarybook_id, diarybook_name, diarybook_image, 
+      diarybook_type, diarybook_user_id)
+    values (#{diarybookId,jdbcType=INTEGER}, #{diarybookName,jdbcType=VARCHAR}, #{diarybookImage,jdbcType=VARCHAR}, 
+      #{diarybookType,jdbcType=VARCHAR}, #{diarybookUserId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lotlyz.lotday.model.Diarybook">
+    insert into Diarybook
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="diarybookId != null">
+        diarybook_id,
+      </if>
+      <if test="diarybookName != null">
+        diarybook_name,
+      </if>
+      <if test="diarybookImage != null">
+        diarybook_image,
+      </if>
+      <if test="diarybookType != null">
+        diarybook_type,
+      </if>
+      <if test="diarybookUserId != null">
+        diarybook_user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="diarybookId != null">
+        #{diarybookId,jdbcType=INTEGER},
+      </if>
+      <if test="diarybookName != null">
+        #{diarybookName,jdbcType=VARCHAR},
+      </if>
+      <if test="diarybookImage != null">
+        #{diarybookImage,jdbcType=VARCHAR},
+      </if>
+      <if test="diarybookType != null">
+        #{diarybookType,jdbcType=VARCHAR},
+      </if>
+      <if test="diarybookUserId != null">
+        #{diarybookUserId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lotlyz.lotday.model.Diarybook">
+    update Diarybook
+    <set>
+      <if test="diarybookName != null">
+        diarybook_name = #{diarybookName,jdbcType=VARCHAR},
+      </if>
+      <if test="diarybookImage != null">
+        diarybook_image = #{diarybookImage,jdbcType=VARCHAR},
+      </if>
+      <if test="diarybookType != null">
+        diarybook_type = #{diarybookType,jdbcType=VARCHAR},
+      </if>
+      <if test="diarybookUserId != null">
+        diarybook_user_id = #{diarybookUserId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where diarybook_id = #{diarybookId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lotlyz.lotday.model.Diarybook">
+    update Diarybook
+    set diarybook_name = #{diarybookName,jdbcType=VARCHAR},
+      diarybook_image = #{diarybookImage,jdbcType=VARCHAR},
+      diarybook_type = #{diarybookType,jdbcType=VARCHAR},
+      diarybook_user_id = #{diarybookUserId,jdbcType=INTEGER}
+    where diarybook_id = #{diarybookId,jdbcType=INTEGER}
+  </update>
+</mapper>
